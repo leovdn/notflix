@@ -18,7 +18,8 @@ export const ContentAreaContainer = styled.section`
 ContentAreaContainer.Item = styled.div`
   width: 50%;
   display: inline-block;
-  margin-bottom: 50px;
+  justify-self: self-end;
+  padding: 24px;
   @media (max-width: 800px) {
     width: 100%;
   }
@@ -53,7 +54,7 @@ ContentAreaContainer.Description = styled.p`
 
 ContentAreaContainer.Title = styled.h2`
   font-style: normal;
-  font-weight: 300;
+  font-weight: bold;
   font-size: 40px;
   line-height: 1;
   margin-top: 0;
@@ -91,12 +92,12 @@ export const BannerMainContainer = styled.section`
   &:before {
     top: 0;
     height: 100%;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.6);
   }
 
   &:after {
     bottom: 0;
-    background: linear-gradient(0deg, #141414 0%, transparent 100%);
+    background: linear-gradient(0deg, #141414 10%, transparent 80%);
   }
 `;
 
