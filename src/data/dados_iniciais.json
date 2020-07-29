@@ -1,12 +1,12 @@
 {
   "categorias": [
     {
-      "titulo": "Front End",
-      "link": "https://www.alura.com.br/formacao-front-end",
+      "titulo": "Game Trailers",
+      "link": "https://www.youtube.com/watch?v=ap39Y_cyLr4&list=PLZlNb4uKTOBoigVeLmFbk2MA2HarUAliI",
       "cor": "#6BD1FF",
       "link_extra": {
-        "text": "Formação de Front End na Alura",
-        "url": "https://www.alura.com.br/cursos-online-front-end"
+        "text": "Best Game Trailers Playlist",
+        "url": "https://www.youtube.com/watch?v=ap39Y_cyLr4&list=PLZlNb4uKTOBoigVeLmFbk2MA2HarUAliI"
       },
       "videos": [
         {
@@ -14,37 +14,37 @@
           "url": "https://www.youtube.com/watch?v=c0i88t0Kacs"
         },
         {
-          "titulo": "SEO com React",
-          "url": "https://www.youtube.com/watch?v=c8mVlakBESE"
+          "titulo": "Baldur's Gate III - Official Opening Cinematic Reveal Trailer",
+          "url": "https://www.youtube.com/watch?v=t9yyRvAiXvc"
         },
         {
-          "titulo": "Componentização com VanillaJS #AluraMais",
-          "url": "https://www.youtube.com/watch?v=LatCKpcOMak"
+          "titulo": "Hellblade: Senua's Sacrifice",
+          "url": "https://www.youtube.com/watch?v=LCC5sEtOnkU"
         },
         {
-          "titulo": "Pare de chutar e aprenda a display: inline #01",
-          "url": "https://www.youtube.com/watch?v=5PS6ku8NzIE"
+          "titulo": "Dark Souls | Opening Cinematic",
+          "url": "https://www.youtube.com/watch?v=ylFzJ3wRgHw"
         },
         {
-          "titulo": "Template String: Interpolando strings com JavaScript #AluraMais",
-          "url": "https://www.youtube.com/watch?v=ORI_HTXaIw0"
+          "titulo": "Devil May Cry 5 - E3 2018 Announcement Trailer",
+          "url": "https://www.youtube.com/watch?v=KMSGj9Y2T9Q"
         },
         {
-          "titulo": "Qual é a melhor linguagem de programação? #HipstersPontoTube",
-          "url": "https://www.youtube.com/watch?v=Uh-GNH-t89w"
+          "titulo": "Assassin's Creed - Brotherhood | E3 Trailer",
+          "url": "https://www.youtube.com/watch?v=zzNs4-kRLaE"
         },
         {
-          "titulo": "Novidades do Angular v9",
-          "url": "https://www.youtube.com/watch?v=34uHo7hFmG0"
+          "titulo": "God of War - Be A Warrior: PS4 Gameplay Trailer | E3 2017",
+          "url": "https://www.youtube.com/watch?v=gOE2BVRCUkM"
         },
         {
-          "titulo": "Base para aprender os frameworks",
-          "url": "https://www.youtube.com/watch?v=QzDjdlF1BQI"
+          "titulo": "Cyberpunk 2077 | Teaser Trailer",
+          "url": "https://www.youtube.com/watch?v=P99qJGrPNLs"
         }        
       ]
     },
     {
-      "titulo": "Back End",
+      "titulo": "Anime AMVs",
       "cor": "#00C86F",
       "link_extra": {
         "text": "Cursos de Back End na Alura",
@@ -52,24 +52,28 @@
       },
       "videos": [
         {
-          "titulo": "PERCURSO em NÍVEL em ÁRVORE BINÁRIA | Estruturas de Dados #14",
-          "url": "https://www.youtube.com/watch?v=UOK7nS2E9xM"
+          "titulo": "Hunter x Hunter AMV - Madness",
+          "url": "https://www.youtube.com/watch?v=aO-ZaF4FJls"
         },
         {
-          "titulo": "Coders4Tips - S01E04: GitHub CLI - Uma Nova Experiência no Github!",
-          "url": "https://www.youtube.com/watch?v=6o6-bKOZOEY"
+          "titulo": "One Piece - A Tale of 3 Brothers",
+          "url": "https://www.youtube.com/watch?v=bpMgB9Ktlzo"
         },
         {
-          "titulo": "Programei 4 robôs que criam vídeos para mim no YouTube",
-          "url": "https://www.youtube.com/watch?v=kjhu1LEmRpY"
+          "titulo": "Haikyuu!! - Unstoppable",
+          "url": "https://www.youtube.com/watch?v=WGMc7SxIZfU"
         },
         {
-          "titulo": "API: Dicionário do Programador",
-          "url": "https://www.youtube.com/watch?v=vGuqKIRWosk"
+          "titulo": "Tokyo Ghoul - Rise",
+          "url": "https://www.youtube.com/watch?v=8RIpr-0ES1U"
         }, 
+        {          
+          "titulo": "Boku no Hero - Farewell All Might",
+          "url": "https://youtu.be/9jY4xwZ6xHU"
+        },
         {
-          "titulo": "Usando Git Direito",
-          "url": "https://www.youtube.com/watch?v=6OokP-NE49k"
+          "titulo": "Koe no Katachi",
+          "url": "https://www.youtube.com/watch?v=xh3nGdZa1ZI"
         }
       ]
     },
