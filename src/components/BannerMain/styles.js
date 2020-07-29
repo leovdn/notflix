@@ -5,9 +5,10 @@ export const ContentAreaContainer = styled.section`
   margin-right: 5%;
   height: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: space-between;
   position: relative;
+  padding-top: 20vh;
   z-index: 10;
   @media (max-width: 800px) {
     padding-top: 100px;
@@ -16,10 +17,9 @@ export const ContentAreaContainer = styled.section`
 `;
 
 ContentAreaContainer.Item = styled.div`
-  width: 50%;
+  width: 45%;
   display: inline-block;
   justify-self: self-end;
-  padding: 24px;
   @media (max-width: 800px) {
     width: 100%;
   }
@@ -92,12 +92,12 @@ export const BannerMainContainer = styled.section`
   &:before {
     top: 0;
     height: 100%;
-    background: rgba(0,0,0,0.6);
+    background: rgba(0,0,0,0.5);
   }
 
   &:after {
     bottom: 0;
-    background: linear-gradient(0deg, #141414 10%, transparent 80%);
+    background: linear-gradient(0deg, #141414 0%, transparent 80%);
   }
 `;
 
