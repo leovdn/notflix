@@ -1,6 +1,8 @@
 .Logo {
-  max-width: 100px;
+  max-width: 120px;
+  margin-top: 4px;
 }
+
 @media (max-width: 800px) {
   .Logo {
     max-width: 105px;
@@ -18,16 +20,21 @@
 
   position: fixed;
   top: 0;
-  left: 0;
-  right: 0;
+
   padding-left: 5%;
   padding-right: 5%;
 
-  background: var(--black);
-  border-bottom: 2px solid var(--primary);
+  background: linear-gradient(180deg, #1414148a 30%, #14141400 );
+  transition-timing-function: ease-out;
+  transition: all .5s;
 }
+
+.Menu-dark {
+  background: #141414;
+}
+
 body {
-  --bodyPaddingTop: 64px;
+  --bodyPaddingTop: 0px;
   padding-top: var(--bodyPaddingTop);
 }
 @media (max-width: 800px) {
@@ -36,7 +43,7 @@ body {
     justify-content: center;
   }
   body {
-    --bodyPaddingTop: 40px;
+    --bodyPaddingTop: 0px;
     padding-top: var(--bodyPaddingTop);
   }
 }

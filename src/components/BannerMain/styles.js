@@ -5,9 +5,10 @@ export const ContentAreaContainer = styled.section`
   margin-right: 5%;
   height: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: space-between;
   position: relative;
+  padding-top: 20vh;
   z-index: 10;
   @media (max-width: 800px) {
     padding-top: 100px;
@@ -16,9 +17,9 @@ export const ContentAreaContainer = styled.section`
 `;
 
 ContentAreaContainer.Item = styled.div`
-  width: 50%;
+  width: 45%;
   display: inline-block;
-  margin-bottom: 50px;
+  justify-self: self-end;
   @media (max-width: 800px) {
     width: 100%;
   }
@@ -53,7 +54,7 @@ ContentAreaContainer.Description = styled.p`
 
 ContentAreaContainer.Title = styled.h2`
   font-style: normal;
-  font-weight: 300;
+  font-weight: bold;
   font-size: 40px;
   line-height: 1;
   margin-top: 0;
@@ -96,7 +97,7 @@ export const BannerMainContainer = styled.section`
 
   &:after {
     bottom: 0;
-    background: linear-gradient(0deg, #141414 0%, transparent 100%);
+    background: linear-gradient(0deg, #141414 0%, transparent 80%);
   }
 `;
 
