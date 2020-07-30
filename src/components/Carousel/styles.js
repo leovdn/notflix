@@ -2,29 +2,41 @@ import styled from 'styled-components';
 
 export const Title = styled.h3`
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 35px;
   line-height: 1;
   margin-bottom: 16px;
   display: inline-block;
-  padding: 20px;
-  background: red;
+  padding: 8px 0;
   line-height: 1;
-  border-radius: 4px;
 
   @media (max-width: 800px) {
     font-size: 18px;
     padding: 10px;
   }
+
+  &::after {
+    transition: all ease-in-out .3s;
+    background: none repeat scroll 0 0 #ffffff;
+    content: "";
+    display: block;
+    height: 4px;
+    width: 0;
+    margin-top: 12px;
+  }
+  &:hover:after {
+    width: 104%;
+  }  
 `;
 
 export const ExtraLink = styled.a`
   margin-left: 16px;
   text-decoration: none;
   transition: opacity .3s;
+  opacity: .4;
   &:hover,
   &:focus {
-    opacity: .5;
+    opacity: .7;
   }
   @media (max-width: 800px) {
     display: block;

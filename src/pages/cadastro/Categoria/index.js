@@ -52,18 +52,6 @@ function CadastroCategoria() {
           onChange={handleChange}
         />
 
-        {/* <div>
-          <label>
-            Descrição:
-            <textarea 
-              type="text"
-              value={values.descricao}
-              name="descricao"
-              onChange={handleChange}
-            />
-          </label>
-        </div> */}
-
         <FormField
           label="Cor"
           type="color"
@@ -71,18 +59,6 @@ function CadastroCategoria() {
           value={values.cor}
           onChange={handleChange}
         />
-
-        {/* <div>
-          <label>
-            Cor:
-            <input 
-              type="color"
-              value={values.cor}
-              name="cor"
-              onChange={handleChange}
-            />
-          </label>
-        </div> */}
 
         <button>
           Cadastrar

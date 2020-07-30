@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const ContentAreaContainer = styled.section`
   margin-left: 5%;
   margin-right: 5%;
-  height: 100%;
+  height: 90%;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -17,7 +17,8 @@ export const ContentAreaContainer = styled.section`
 `;
 
 ContentAreaContainer.Item = styled.div`
-  width: 45%;
+  width: 40%;
+  height: 100%;
   display: inline-block;
   justify-self: self-end;
   @media (max-width: 800px) {
