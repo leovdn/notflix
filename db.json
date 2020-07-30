@@ -1,0 +1,16 @@
+{
+  "categorias": [
+    {
+      "id": 1,
+      "nome": "Game Trailers",
+      "descricao": "Trailers de Games Bacanas",
+      "cor": "#Ef5"
+    },
+    {
+      "id": 2,
+      "nome": "Anime AMVs",
+      "descricao": "Anime Recommendations",
+      "cor": "#D25"
+    }
+    ]
+}
