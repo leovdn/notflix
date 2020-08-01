@@ -16,7 +16,6 @@ function CadastroCategoria() {
 
   const [categorias, setCategorias] = useState([]);
 
-
   useEffect(() => {
     const URL = window.location.hostname.includes('localhost')
       ? 'http://localhost:8080/categorias'
@@ -28,7 +27,7 @@ function CadastroCategoria() {
           ...response,
         ]);
       });
-  }, [values.nome]);
+  }, []);
 
   return (
     <PageDefault>

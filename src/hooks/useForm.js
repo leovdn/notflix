@@ -4,7 +4,11 @@ function useForm(initialValues) {
   const [values, setValues] = useState(initialValues);
 
   function setValue(key, value) {
-    setValues({ ...values, [key]: value });
+    // key: nome, descricao, bla, bli
+    setValues({
+      ...values,
+      [key]: value, // nome: 'value'
+    });
   }
 
   function handleChange(eventInfo) {

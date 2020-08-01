@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import BannerMain from '../../components/BannerMain';
 import Carousel from '../../components/Carousel';
-import categoriasRepository from '../../repositories/categorias';
 import PageDefault from '../../components/PageDefault';
+import categoriasRepository from '../../repositories/categorias';
 
 function Home() {
   const [dadosIniciais, setDadosIniciais] = useState([]);
@@ -29,7 +29,7 @@ function Home() {
               <BannerMain
                 videoTitle={dadosIniciais[0].videos[0].titulo}
                 url={dadosIniciais[0].videos[0].url}
-                videoDescription={dadosIniciais[0].videos[0].description}
+                videoDescription="Com mais de 250 premiações, The Witcher 3 é o jogo mais premiado da história dos games. Produzido pelo estúdio polonês CD Projekt Red, o título se mostrou um ambicioso Open-World RPG, dando sequência à já então popular série de jogos inspirados nos livros de Andrzej Sapkowski"
               />
               <Carousel
                 ignoreFirstVideo
