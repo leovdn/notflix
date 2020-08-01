@@ -2,15 +2,194 @@
   "categorias": [
     {
       "id": 1,
-      "nome": "Game Trailers",
-      "descricao": "Trailers de Games Bacanas",
-      "cor": "#Ef5"
+      "titulo": "Game Trailers",
+      "link": "https://www.youtube.com/watch?v=ap39Y_cyLr4&list=PLZlNb4uKTOBoigVeLmFbk2MA2HarUAliI",
+      "cor": "#6BD1FF",
+      "link_extra": {
+        "text": "Best Game Trailers Playlist",
+        "url": "https://www.youtube.com/watch?v=ap39Y_cyLr4&list=PLZlNb4uKTOBoigVeLmFbk2MA2HarUAliI"
+      }
     },
     {
       "id": 2,
-      "nome": "Anime AMVs",
-      "descricao": "Anime Recommendations",
-      "cor": "#D25"
+      "titulo": "Anime AMVs",
+      "cor": "#00C86F",
+      "link_extra": {
+        "text": "Cursos de Back End na Alura",
+        "url": "https://www.alura.com.br/cursos-online-programacao"
+      }
+    },
+    {
+      "id": 3,
+      "titulo": "Mangás",
+      "cor": "#9cd33b",
+      "link_extra": {
+        "text": "Recomendações de Mangá",
+        "url": "https://www.alura.com.br/formacao-data-science"
+      }
+    },
+    {
+      "id": 4,
+      "titulo": "Séries",
+      "cor": "red",
+      "link_extra": {
+        "text": "Formação de Jogos na Alura",
+        "url": "https://www.alura.com.br/formacao-jogos-unity"
+      }
+    },
+    {
+      "titulo": "Desenvolvimento",
+      "cor": "orange",
+      "link_extra": {
+        "text": "Formação de Jogos na Alura",
+        "url": "https://www.alura.com.br/formacao-jogos-unity"
+      }
     }
-    ]
+  ],
+  "videos": [
+    {
+      "id": 1,
+      "categoriaId": 1,
+      "titulo": "The Witcher 3: Wild Hunt - Killing Monsters Cinematic Trailer",
+      "url": "https://www.youtube.com/watch?v=c0i88t0Kacs"
+    },
+    {
+      "id": 2,
+      "categoriaId": 1,
+      "titulo": "Baldur's Gate III - Official Opening Cinematic Reveal Trailer",
+      "url": "https://www.youtube.com/watch?v=t9yyRvAiXvc"
+    },
+    {
+      "id": 3,
+      "categoriaId": 1,
+      "titulo": "Baldur's Gate III - Official Opening Cinematic Reveal Trailer",
+      "url": "https://www.youtube.com/watch?v=t9yyRvAiXvc"
+    },
+    {
+      "id": 4,
+      "categoriaId": 1,
+      "titulo": "Hellblade: Senua's Sacrifice",
+      "url": "https://www.youtube.com/watch?v=LCC5sEtOnkU"
+    },
+    {
+      "id": 5,
+      "categoriaId": 1,
+      "titulo": "Dark Souls | Opening Cinematic",
+      "url": "https://www.youtube.com/watch?v=ylFzJ3wRgHw"
+    },
+    {
+      "id": 6,
+      "categoriaId": 1,
+      "titulo": "Devil May Cry 5 - E3 2018 Announcement Trailer",
+      "url": "https://www.youtube.com/watch?v=KMSGj9Y2T9Q"
+    },
+    {
+      "id": 7,
+      "categoriaId": 1,
+      "titulo": "Assassin's Creed - Brotherhood | E3 Trailer",
+      "url": "https://www.youtube.com/watch?v=zzNs4-kRLaE"
+    },
+    {
+      "id": 8,
+      "categoriaId": 1,
+      "titulo": "God of War - Be A Warrior: PS4 Gameplay Trailer | E3 2017",
+      "url": "https://www.youtube.com/watch?v=gOE2BVRCUkM"
+    },
+    {
+      "id": 9,
+      "categoriaId": 1,
+      "titulo": "Cyberpunk 2077 | Teaser Trailer",
+      "url": "https://www.youtube.com/watch?v=P99qJGrPNLs"
+    },
+    {
+      "id": 10,
+      "categoriaId": 2,
+      "titulo": "Hunter x Hunter AMV - Madness",
+      "url": "https://www.youtube.com/watch?v=aO-ZaF4FJls"
+    },
+    {
+      "id": 11,
+      "categoriaId": 2,
+      "titulo": "One Piece - A Tale of 3 Brothers",
+      "url": "https://www.youtube.com/watch?v=bpMgB9Ktlzo"
+    },
+    {
+      "id": 12,
+      "categoriaId": 2,
+      "titulo": "Haikyuu!! - Unstoppable",
+      "url": "https://www.youtube.com/watch?v=WGMc7SxIZfU"
+    },
+    {
+      "id": 13,
+      "categoriaId": 2,
+      "titulo": "Tokyo Ghoul - Rise",
+      "url": "https://www.youtube.com/watch?v=8RIpr-0ES1U"
+    }, 
+    {
+      "id": 14,
+      "categoriaId": 2,          
+      "titulo": "Boku no Hero - Farewell All Might",
+      "url": "https://youtu.be/9jY4xwZ6xHU"
+    },
+    {
+      "id": 15,
+      "categoriaId": 2,
+      "titulo": "Koe no Katachi",
+      "url": "https://www.youtube.com/watch?v=xh3nGdZa1ZI"
+    },
+    {
+      "id": 16,
+      "categoriaId": 3,
+      "titulo": "Koe no Katachi",
+      "url": "https://www.youtube.com/watch?v=xh3nGdZa1ZI"
+    },
+    {
+      "id": 17,
+      "categoriaId": 3,
+      "titulo": "Koe no Katachi",
+      "url": "https://www.youtube.com/watch?v=xh3nGdZa1ZI"
+    },
+    {
+      "id": 18,
+      "categoriaId": 3,
+      "titulo": "Koe no Katachi",
+      "url": "https://www.youtube.com/watch?v=xh3nGdZa1ZI"
+    },
+    {
+      "id": 19,
+      "categoriaId": 3,
+      "titulo": "Koe no Katachi",
+      "url": "https://www.youtube.com/watch?v=xh3nGdZa1ZI"
+    },
+    {
+      "id": 20,
+      "categoriaId": 4,
+      "titulo": "Koe no Katachi",
+      "url": "https://www.youtube.com/watch?v=xh3nGdZa1ZI"
+    },
+    {
+      "id": 21,
+      "categoriaId": 4,
+      "titulo": "Koe no Katachi",
+      "url": "https://www.youtube.com/watch?v=xh3nGdZa1ZI"
+    },
+    {
+      "id": 22,
+      "categoriaId": 4,
+      "titulo": "Koe no Katachi",
+      "url": "https://www.youtube.com/watch?v=xh3nGdZa1ZI"
+    },
+    {
+      "id": 23,
+      "categoriaId": 5,
+      "titulo": "Koe no Katachi",
+      "url": "https://www.youtube.com/watch?v=xh3nGdZa1ZI"
+    },
+    {
+      "id": 24,
+      "categoriaId": 5,
+      "titulo": "Koe no Katachi",
+      "url": "https://www.youtube.com/watch?v=xh3nGdZa1ZI"
+    }     
+  ]
 }

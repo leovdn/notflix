@@ -17,7 +17,7 @@ export const ContentAreaContainer = styled.section`
 `;
 
 ContentAreaContainer.Item = styled.div`
-  width: 40%;
+  width: 42%;
   height: 100%;
   display: inline-block;
   justify-self: self-end;
@@ -37,7 +37,7 @@ ContentAreaContainer.Category = styled.h1`
   text-align: center;
   display: inline-block; 
   padding: 25px;
-  line-height: 1;
+  line-height: 1.2;
   border-radius: 4px;
 
   @media (max-width: 800px) {
@@ -93,12 +93,12 @@ export const BannerMainContainer = styled.section`
   &:before {
     top: 0;
     height: 100%;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.4);
   }
 
   &:after {
     bottom: 0;
-    background: linear-gradient(0deg, #141414 0%, transparent 80%);
+    background: linear-gradient(0deg, #141414 0%, transparent 50%);
   }
 `;
 

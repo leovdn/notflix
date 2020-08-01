@@ -24,9 +24,9 @@
   padding-left: 5%;
   padding-right: 5%;
 
-  background: linear-gradient(180deg, #1414148a 30%, #14141400 );
-  transition-timing-function: ease-out;
-  transition: all .5s;
+  background: linear-gradient(180deg, #14141462 10%, #14141400 );
+  transition: ease-in-out .5s;
+
 }
 
 .Menu-dark {
