@@ -38,6 +38,7 @@
       }
     },
     {
+      "id": 5,
       "titulo": "Desenvolvimento",
       "cor": "orange",
       "link_extra": {
@@ -52,12 +53,6 @@
       "categoriaId": 1,
       "titulo": "The Witcher 3: Wild Hunt - Killing Monsters Cinematic Trailer",
       "url": "https://www.youtube.com/watch?v=c0i88t0Kacs"
-    },
-    {
-      "id": 2,
-      "categoriaId": 1,
-      "titulo": "Baldur's Gate III - Official Opening Cinematic Reveal Trailer",
-      "url": "https://www.youtube.com/watch?v=t9yyRvAiXvc"
     },
     {
       "id": 3,
@@ -192,64 +187,16 @@
       "url": "https://www.youtube.com/watch?v=xh3nGdZa1ZI"
     },
     {
-      "titulo": "Teste",
-      "url": "https://www.youtube.com/watch?v=Y4uFkcvpi3Y",
-      "categoriasId": 1,
+      "titulo": "TesteDev",
+      "url": "https://www.youtube.com/watch?v=2O4-6o_x-8o",
+      "categoriaId": 5,
       "id": 25
     },
     {
-      "titulo": "Video padrão",
-      "url": "https://www.youtube.com/watch?v=c9peuOEHoXo",
-      "categoriasId": 1,
+      "titulo": "TesteAnime",
+      "url": "https://www.youtube.com/watch?v=2O4-6o_x-8o",
+      "categoriaId": 3,
       "id": 26
-    },
-    {
-      "titulo": "Video padrão",
-      "url": "https://www.youtube.com/watch?v=c9peuOEHoXo",
-      "categoriasId": 1,
-      "id": 27
-    },
-    {
-      "titulo": "Video padrão",
-      "url": "https://www.youtube.com/watch?v=c9peuOEHoXo",
-      "categoriaId": 1,
-      "id": 28
-    },
-    {
-      "titulo": "Video padrão",
-      "url": "https://www.youtube.com/watch?v=c9peuOEHoXo",
-      "categoriaId": 1,
-      "id": 29
-    },
-    {
-      "titulo": "Video padrão",
-      "url": "https://www.youtube.com/watch?v=c9peuOEHoXo",
-      "categoriaId": 1,
-      "id": 30
-    },
-    {
-      "titulo": "TesteAnime",
-      "url": "https://www.youtube.com/watch?v=Y4uFkcvpi3Y",
-      "categoriaId": 1,
-      "id": 31
-    },
-    {
-      "titulo": "TesteAnime",
-      "url": "https://www.youtube.com/watch?v=c9peuOEHoXo",
-      "categoriaId": 1,
-      "id": 32
-    },
-    {
-      "titulo": "dsdsa",
-      "url": "https://www.youtube.com/watch?v=c9peuOEHoXo",
-      "categoriaId": 1,
-      "id": 33
-    },
-    {
-      "titulo": "TesteAnime",
-      "url": "https://www.youtube.com/watch?v=c9peuOEHoXo",
-      "categoriaId": 1,
-      "id": 34
     }
   ]
 }
