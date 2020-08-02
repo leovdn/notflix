@@ -14,14 +14,15 @@ function CadastroCategoria() {
     descricao: '',
     cor: '',
   };
+  const history = useHistory();
+  const [categorias, setCategorias] = useState([]);
+  const { handleChange, values, clearForm } = useForm(initialValues);
 
   const URL = window.location.hostname.includes('localhost')
     ? 'http://localhost:8080/categorias'
     : 'https://notflix-leovdn.herokuapp.com/categorias';
 
-  const { handleChange, values, clearForm } = useForm(initialValues);
-  const [categorias, setCategorias] = useState([]);
-  const history = useHistory();
+
 
   async function handleNewcategoria(event) {
     event.preventDefault();
@@ -32,11 +33,20 @@ function CadastroCategoria() {
     clearForm();
   }
 
-  async function deleteCategory(event) {
-    event.preventDefault();
-
-    categoriasRepository.deleteCategory(values);
+  async function handleRemovecategoria(e) {
+    const target = String(e.target.getAttribute('target'));
+    e.preventDefault();
+    const URL_ID = `${URL}/${target}`;
+    try {
+      await fetch(URL_ID, {
+        method: 'DELETE',
+      });
+    } catch (err) {
+      // eslint-disable-next-line no-alert
+      alert('Erro ao deletar caso, tente novamente');
+    }
     setCategorias([...categorias, values]);
+    history.push('/');
     clearForm();
   }
 
@@ -112,6 +122,8 @@ function CadastroCategoria() {
               <td data-title="Descrição">{categoria.descricao}</td>
               <td data-title="Button">
                 <button
+                  target={categoria.id}
+                  onClick={handleRemovecategoria}
                   type="button"
                 >
                   Remover

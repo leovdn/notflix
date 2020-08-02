@@ -8,10 +8,10 @@ function Footer() {
     <FooterBase>
       <div className="social">
         <a href="https://github.com/leovdn">
-          <img src={Github} />
+          <img src={Github} alt="Github Logo" />
         </a>
         <a href="https://www.linkedin.com/in/leovdn/">
-          <img src={Linkedin} />
+          <img src={Linkedin} alt="LinkedIn Logo" />
         </a>
       </div>
       <p>Desenvolvido por Leonardo Dantas na Imersão React da Alura</p>
