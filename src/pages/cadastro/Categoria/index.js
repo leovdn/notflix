@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormFields';
 import Button from '../../../components/Button';
 import useForm from '../../../hooks/useForm';
+import categoriasRepository from '../../../repositories/categorias';
 import './Loading.css';
 
 function CadastroCategoria() {
@@ -13,14 +14,24 @@ function CadastroCategoria() {
     cor: '',
   };
 
-  const { handleChange, values, clearForm } = useForm(initialValues);
+  const URL = window.location.hostname.includes('localhost')
+    ? 'http://localhost:8080/categorias'
+    : 'https://notflix-leovdn.herokuapp.com/categorias';
 
+  const { handleChange, values, clearForm } = useForm(initialValues);
   const [categorias, setCategorias] = useState([]);
+  const history = useHistory();
+
+  async function handleNewcategoria(event) {
+    event.preventDefault();
+
+    categoriasRepository.createCategory(values);
+    setCategorias([...categorias, values]);
+    history.push('/');
+    clearForm();
+  }
 
   useEffect(() => {
-    const URL = window.location.hostname.includes('localhost')
-      ? 'http://localhost:8080/categorias'
-      : 'https://notflix-leovdn.herokuapp.com/categorias';
     fetch(URL)
       .then(async (ServerResponse) => {
         const response = await ServerResponse.json();
@@ -38,16 +49,7 @@ function CadastroCategoria() {
         {values.titulo}
       </h1>
 
-      <form onSubmit={function handleSubmit(eventInfo) {
-        eventInfo.preventDefault();
-        setCategorias([
-          ...categorias,
-          values,
-        ]);
-
-        clearForm();
-      }}
-      >
+      <form onSubmit={handleNewcategoria}>
 
         <FormField
           label="Nome da Categoria"
