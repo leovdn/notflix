@@ -4,10 +4,11 @@ import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormFields';
 import Button from '../../../components/Button';
 import useForm from '../../../hooks/useForm';
+import './Loading.css';
 
 function CadastroCategoria() {
   const initialValues = {
-    nome: '',
+    titulo: '',
     descricao: '',
     cor: '',
   };
@@ -34,7 +35,7 @@ function CadastroCategoria() {
       <h1>
         Cadastro de Categoria:
         {' '}
-        {values.nome}
+        {values.titulo}
       </h1>
 
       <form onSubmit={function handleSubmit(eventInfo) {
@@ -51,7 +52,7 @@ function CadastroCategoria() {
         <FormField
           label="Nome da Categoria"
           type="text"
-          name="nome"
+          name="titulo"
           value={values.titulo}
           onChange={handleChange}
         />
@@ -78,9 +79,7 @@ function CadastroCategoria() {
       </form>
 
       {categorias.length === 0 && (
-        <div>
-          Loading...
-        </div>
+        <div className="loader" />
       )}
 
       <ul>

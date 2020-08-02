@@ -4,6 +4,7 @@ import styled, { css } from 'styled-components';
 
 const FormFieldWrapper = styled.div`
   position: relative; 
+  max-width: 600px;
   textarea {
     min-height: 150px;
   }

@@ -55,6 +55,7 @@ body {
   cursor: pointer;
   padding: 16px 24px;
   font-style: normal;
+  height: 44px;
   font-weight: bold;
   font-size: 16px;
   outline: none;
@@ -79,4 +80,20 @@ body {
     border: 0;
     text-align: center;
   }
+}
+
+.menu-links {
+  display: flex;
+  align-items: center;
+}
+
+.menu-links a {
+  margin-left: 24px;
+}
+
+.Avatar {
+  display: block;
+  width: 44px;
+  height: 44px;
+  background: ;
 }
