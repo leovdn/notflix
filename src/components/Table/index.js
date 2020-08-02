@@ -1,21 +1,24 @@
 import styled from 'styled-components';
 
 const Table = styled.table`
-  border: 1px solid #ede;
   border-radius: 14px;
+  overflow: hidden;
+  border-radius: 4px;
   border-collapse: collapse;
   text-align: left;
   width: 100%;
   align-items: center;
   font-family: 'Roboto', sans-serif;
-  margin-top: 48px;
+  margin: 48px 0;
 
 & thead th {
-  padding: 10px;
+  padding: 16px 10px;
   font-size: 1.3em;
-  color: #fff;
+  color: #aaa;
   font-weight: 600;
   text-align: center;
+  border-right: 1px solid #141414;
+
 }
 
 & thead th:first-child {
@@ -28,6 +31,7 @@ const Table = styled.table`
   padding: 10px;
   text-align: center;
   position: relative;
+  border-right: 1px solid #141414;
 }
 
 & tbody tr td:first-child {
@@ -37,10 +41,19 @@ const Table = styled.table`
 & tbody tr {
   border: none;
   display: table-row;
+  transition: ease-in-out 100ms;
+}
+
+& tbody tr:hover, & tbody tr:focus  {
+  opacity: 0.85;
 }
 
 & tbody tr:nth-child(odd) {
   background: #53585d;
+}
+
+& tbody tr:nth-child(even) {
+  background: #393d41;
 }
 
 & tbody tr td button {
@@ -51,6 +64,7 @@ const Table = styled.table`
   width: auto;
 }
 
+
 & tbody tr td button {
   background: #dc1a28;
   border: none;
@@ -59,7 +73,9 @@ const Table = styled.table`
   color: #fff;
   font-weight: 700;;
   padding: 10px 0;
-  width: 50%;
+  width: 100%;
+  max-width: 100px;
+  transition: 300ms;
 }
 
 & thead {
@@ -73,8 +89,23 @@ const Table = styled.table`
 }
 
 & tbody tr td button:hover, & tbody tr td button:focus {
-  background: #a795fe;
+  background: #90111a;
 cursor: pointer;
+}
+
+& [data-title="Nome"] {
+  width: 200px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+& [data-title="Descrição"] {
+  font-size: 14px;  
+  color: #d5d5d5;  
+}
+
+& [data-title="Button"] {
+  width: 200px;
 }
 
 @media all and (max-width: 800px) {
@@ -82,8 +113,17 @@ cursor: pointer;
       display: block;
       text-align: center;
   }
+
   & tbody tr td:first-child {
     text-align: center;
+  }
+
+  & tbody tr td:nth-child(even) {
+    background-color: #53585d;
+  }
+
+  & tbody tr td:nth-child(odd) {
+    background-color: #393d41;
   }
 
   & tbody tr td:before {
@@ -107,6 +147,19 @@ cursor: pointer;
       margin-bottom: 10px;
       display: block;
       border: 1px solid #dad6eb;
+  }
+  & [data-title="Nome"] {
+  width: 100%;
+  }
+  & [data-title="Descrição"] {
+  min-height: 38px;
+  }
+  & [data-title="Button"] {
+    width: 100%;
+  } 
+  & [data-title="Button"]:before {
+      content: attr(data-title);
+      display: none;
   }
 }
 `;

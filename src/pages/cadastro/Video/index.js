@@ -30,7 +30,9 @@ function CadastroVideo() {
     <PageDefault>
       <h1>Cadastro de Vídeos</h1>
 
-      <form onSubmit={(event) => {
+      <form 
+      className="formCategoria"
+      onSubmit={(event) => {
         event.preventDefault();
 
         const categoriaEscolhida = categorias.find((categoria) => categoria.titulo === values.categoria);
@@ -67,17 +69,22 @@ function CadastroVideo() {
           suggestions={categoryTitles}
         />
 
-        <Button type="submit">
-          Cadastrar
-        </Button>
+        <div className="buttonsDiv">
+          <Button 
+            className="Cadastrar"
+            type="submit">
+            Cadastrar
+          </Button>
+          <Link to="/cadastro/categoria">
+            <Button>Cadastro de Categorias</Button>
+          </Link>
+        </div>
       </form>
 
       <br />
       <br />
 
-      <Link to="/cadastro/categoria">
-        <h3>Cadastro de Categorias</h3>
-      </Link>
+      
     </PageDefault>
   );
 }

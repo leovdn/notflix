@@ -20,6 +20,10 @@ const Button = styled.button`
   &:focus {
     opacity: .5;
   }
+
+  &.categorias {
+    margin: 0px auto 48px auto;
+  }
 `;
 
 export default Button;

@@ -45,12 +45,6 @@
         "text": "Formação de Jogos na Alura",
         "url": "https://www.alura.com.br/formacao-jogos-unity"
       }
-    },
-    {
-      "titulo": "Nova Categoria",
-      "descricao": "Teste de categoria",
-      "cor": "#440808",
-      "id": 6
     }
   ],
   "videos": [
@@ -221,6 +215,12 @@
       "url": "https://www.youtube.com/watch?v=pzCB9DCGqXM",
       "categoriaId": 6,
       "id": 29
+    },
+    {
+      "titulo": "TesteAnime",
+      "url": "https://www.youtube.com/watch?v=Y4uFkcvpi3Y",
+      "categoriaId": 8,
+      "id": 30
     }
   ]
 }

@@ -1,19 +1,20 @@
 import React from 'react';
 import { FooterBase } from './styles';
+import Github from '../../assets/img/github.png';
+import Linkedin from '../../assets/img/linkedin.png';
 
 function Footer() {
   return (
     <FooterBase>
-      <a href="https://www.alura.com.br/">
-        <img src="https://www.alura.com.br/assets/img/alura-logo-white.1570550707.svg" alt="Logo Alura" />
-      </a>
-      <p>
-        Orgulhosamente criado durante a
-        {' '}
-        <a href="https://www.alura.com.br/">
-          Imersão React da Alura
+      <div className="social">
+        <a href="https://github.com/leovdn">
+          <img src={Github} />
         </a>
-      </p>
+        <a href="https://www.linkedin.com/in/leovdn/">
+          <img src={Linkedin} />
+        </a>
+      </div>
+      <p>Desenvolvido por Leonardo Dantas na Imersão React da Alura</p>
     </FooterBase>
   );
 }

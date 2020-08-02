@@ -32,6 +32,14 @@ function CadastroCategoria() {
     clearForm();
   }
 
+  async function deleteCategory(event) {
+    event.preventDefault();
+
+    categoriasRepository.deleteCategory(values);
+    setCategorias([...categorias, values]);
+    clearForm();
+  }
+
   useEffect(() => {
     fetch(URL)
       .then(async (ServerResponse) => {
@@ -45,12 +53,19 @@ function CadastroCategoria() {
   return (
     <PageDefault>
       <h1>
-        Cadastro de Categoria:
+        Cadastro de Categoria
         {' '}
         {values.titulo}
       </h1>
 
-      <form onSubmit={handleNewcategoria}>
+      {categorias.length === 0 && (
+        <div className="loader" />
+      )}
+
+      <form
+        className="formCategoria"
+        onSubmit={handleNewcategoria}
+      >
 
         <FormField
           label="Nome da Categoria"
@@ -76,21 +91,16 @@ function CadastroCategoria() {
           onChange={handleChange}
         />
 
-        <Button>
+        <Button className="Cadastrar">
           Cadastrar
         </Button>
       </form>
 
-      {categorias.length === 0 && (
-        <div className="loader" />
-      )}
-
       <Table>
         <thead>
           <tr>
-            <th>Nome</th>
+            <th>Categoria</th>
             <th>Descrição</th>
-            <th>Editar</th>
             <th>Remover</th>
           </tr>
         </thead>
@@ -100,23 +110,22 @@ function CadastroCategoria() {
             <tr key={`${categoria.titulo}`}>
               <td data-title="Nome">{categoria.titulo}</td>
               <td data-title="Descrição">{categoria.descricao}</td>
-              <td><button type="button">Editar</button></td>
-              <td><button type="button">Remover</button></td>
+              <td data-title="Button">
+                <button
+                  type="button"
+                >
+                  Remover
+                </button>
+              </td>
             </tr>
           ))}
         </tbody>
       </Table>
 
-      {/* <ul>
-        {categorias.map((categoria) => (
-          <li key={`${categoria.titulo}`}>
-            {categoria.titulo}
-          </li>
-        ))}
-      </ul> */}
       <Link to="/">
         <h3>Ir para a Home</h3>
       </Link>
+
     </PageDefault>
   );
 }
