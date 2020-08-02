@@ -26,7 +26,27 @@ function getAllWithVideos() {
     });
 }
 
+function createCategory(values) {
+  return fetch(URL_CATEGORIES, {
+    method: 'POST',
+    headers: {
+      Accept: 'application/json',
+      'Content-type': 'application/json',
+    },
+    body: JSON.stringify(values),
+  })
+    .then(async (ServerResponse) => {
+      if (ServerResponse.ok) {
+        const response = await ServerResponse.json();
+        return response;
+      }
+
+      throw new Error('Não foi possível Cadastrar os dados');
+    });
+}
+
 export default {
   getAllWithVideos,
   getAll,
+  createCategory,
 };
