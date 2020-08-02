@@ -17,7 +17,7 @@ export const Title = styled.h3`
 
   &::after {
     transition: all ease-in-out .3s;
-    background: none repeat scroll 0 0 #ffffff;
+    background: ${({ backgroundColor }) => backgroundColor };
     content: "";
     display: block;
     height: 4px;

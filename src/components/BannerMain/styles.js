@@ -3,12 +3,12 @@ import styled from 'styled-components';
 export const ContentAreaContainer = styled.section`
   margin-left: 5%;
   margin-right: 5%;
-  height: 90%;
+  height: 100%;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   position: relative;
-  padding-top: 20vh;
+  padding-top: 10%;
   z-index: 10;
   @media (max-width: 800px) {
     padding-top: 100px;
@@ -17,12 +17,22 @@ export const ContentAreaContainer = styled.section`
 `;
 
 ContentAreaContainer.Item = styled.div`
-  width: 42%;
-  height: 100%;
+  width: 45%;
   display: inline-block;
-  justify-self: self-end;
+  margin-bottom: 50px;
+  animation: showDiv 600ms forwards;
   @media (max-width: 800px) {
     width: 100%;
+  }
+  @keyframes showDiv {
+    from {
+      opacity: 0;
+      transform: translate3d(-80px,0,0);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0,0,0);
+    }
   }
 `;
 
@@ -37,9 +47,8 @@ ContentAreaContainer.Category = styled.h1`
   text-align: center;
   display: inline-block; 
   padding: 25px;
-  line-height: 1.2;
+  line-height: 1;
   border-radius: 4px;
-
   @media (max-width: 800px) {
     display: none;
     font-size: 18px;
@@ -48,19 +57,20 @@ ContentAreaContainer.Category = styled.h1`
 `;
 
 ContentAreaContainer.Description = styled.p`
+  line-height: 1.5em;
   @media (max-width: 800px) {
     display: none;
   }
+
 `;
 
 ContentAreaContainer.Title = styled.h2`
   font-style: normal;
   font-weight: bold;
-  font-size: 40px;
-  line-height: 1;
+  font-size: 42px;
+  line-height: 1.2;
   margin-top: 0;
   margin-bottom: 32px;
-
   @media (max-width: 800px) {
     font-size: 32px;
     text-align: center;
@@ -68,7 +78,7 @@ ContentAreaContainer.Title = styled.h2`
 `;
 
 export const BannerMainContainer = styled.section`
-  height: 80vh;
+  height: 100vh;
   position: relative;
   color: #fff;
   background-image: ${({ backgroundImage }) => `url(${backgroundImage})`}; 
@@ -78,7 +88,6 @@ export const BannerMainContainer = styled.section`
     height: auto;
     min-height: 50vh;
   }
-
   &:after,
   &:before {
     content: "";
@@ -89,21 +98,19 @@ export const BannerMainContainer = styled.section`
     margin: auto;
     height: 20%;
   }
-
   &:before {
     top: 0;
     height: 100%;
-    background: rgba(0,0,0,0.4);
+    background: rgba(0,0,0,0.5);
   }
-
   &:after {
     bottom: 0;
-    background: linear-gradient(0deg, #141414 0%, transparent 50%);
+    background: linear-gradient(0deg, #141414 0%, transparent 100%);
   }
 `;
 
 export const WatchButton = styled.button`
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Helvetica', sans-serif;
   box-sizing: border-box;
   cursor: pointer;
   padding: 16px 24px;

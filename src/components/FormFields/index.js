@@ -4,6 +4,7 @@ import styled, { css } from 'styled-components';
 
 const FormFieldWrapper = styled.div`
   position: relative; 
+  max-width: 600px;
   textarea {
     min-height: 150px;
   }
@@ -49,10 +50,13 @@ const Input = styled.input`
   
   resize: none;
   border-radius: 4px;
-  transition: border-color .3s;
+  transition: .3s;
   
-  &:focus {
+  &:focus{
     border-bottom-color: var(--primary);
+  }
+  &:hover {
+    opacity: 0.8;
   }
   &:focus:not([type="color"]) + span {
     transform: scale(.6) translateY(-10px);
