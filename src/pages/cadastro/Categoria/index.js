@@ -5,6 +5,7 @@ import FormField from '../../../components/FormFields';
 import Button from '../../../components/Button';
 import useForm from '../../../hooks/useForm';
 import categoriasRepository from '../../../repositories/categorias';
+import Table from '../../../components/Table';
 import './Loading.css';
 
 function CadastroCategoria() {
@@ -84,13 +85,35 @@ function CadastroCategoria() {
         <div className="loader" />
       )}
 
-      <ul>
+      <Table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Descrição</th>
+            <th>Editar</th>
+            <th>Remover</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          {categorias.map((categoria) => (
+            <tr key={`${categoria.titulo}`}>
+              <td data-title="Nome">{categoria.titulo}</td>
+              <td data-title="Descrição">{categoria.descricao}</td>
+              <td><button type="button">Editar</button></td>
+              <td><button type="button">Remover</button></td>
+            </tr>
+          ))}
+        </tbody>
+      </Table>
+
+      {/* <ul>
         {categorias.map((categoria) => (
           <li key={`${categoria.titulo}`}>
             {categoria.titulo}
           </li>
         ))}
-      </ul>
+      </ul> */}
       <Link to="/">
         <h3>Ir para a Home</h3>
       </Link>
