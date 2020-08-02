@@ -38,7 +38,7 @@ function Home() {
               />
               <div
                 className="scrollSection"
-                data-aos="fade-up"
+                data-aos="fade-right"
               >
                 <Carousel
                   ignoreFirstVideo
@@ -52,7 +52,7 @@ function Home() {
         return (
           <div
             className="scrollSection"
-            data-aos="fade-right"
+            data-aos="fade-up"
           >
             <Carousel
               key={categoria.id}

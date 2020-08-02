@@ -40,7 +40,6 @@ body {
 @media (max-width: 800px) {
   .Menu {
     height: 40px;
-    justify-content: center;
   }
   body {
     --bodyPaddingTop: 0px;
@@ -75,10 +74,16 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: var(--primary);
+    background: #dc1a28;
     border-radius: 0;
     border: 0;
+    width: 100%;
     text-align: center;
+    transition: 300ms;
+  }
+  a.ButtonLink:hover, a.ButtonLink:focus {
+    opacity: 1;
+    background: #831118;
   }
 }
 
@@ -95,5 +100,13 @@ body {
   display: block;
   width: 44px;
   height: 44px;
-  background: ;
+}
+@media (max-width: 800px){
+  .Avatar {
+    width: 30px;
+    height: 30px;
+  }
+  .menu-links a {
+    margin-left: 0;
+  }
 }
