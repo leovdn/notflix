@@ -12,3 +12,36 @@
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
+@keyframes showForm {
+  from {
+    opacity: 0;
+    transform: translate3d(-460px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.formCategoria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-between;
+  animation: showForm 500ms forwards;
+}
+
+.formCategoria div {
+  width: 100%;
+}
+
+.buttonsDiv {
+  max-width: 600px;
+  display: flex;
+  justify-content: space-between;
+}
+
+button.Cadastrar {
+  background: #dc1a28;
+}

@@ -15,8 +15,8 @@
       "titulo": "Anime AMVs",
       "cor": "#00C86F",
       "link_extra": {
-        "text": "Cursos de Back End na Alura",
-        "url": "https://www.alura.com.br/cursos-online-programacao"
+        "text": "Playlist de AMVs",
+        "url": "https://www.youtube.com/watch?v=xZSySfwmy4Q&list=PLAXOdTbb6EbJalmRAOWIjQWiID2IxJ5ED"
       }
     },
     {
@@ -25,32 +25,8 @@
       "cor": "#9cd33b",
       "link_extra": {
         "text": "Recomendações de Mangá",
-        "url": "https://www.alura.com.br/formacao-data-science"
+        "url": "https://www.youtube.com/watch?v=l02G8KCf3b8"
       }
-    },
-    {
-      "id": 4,
-      "titulo": "Séries",
-      "cor": "red",
-      "link_extra": {
-        "text": "Formação de Jogos na Alura",
-        "url": "https://www.alura.com.br/formacao-jogos-unity"
-      }
-    },
-    {
-      "id": 5,
-      "titulo": "Desenvolvimento",
-      "cor": "orange",
-      "link_extra": {
-        "text": "Formação de Jogos na Alura",
-        "url": "https://www.alura.com.br/formacao-jogos-unity"
-      }
-    },
-    {
-      "titulo": "Nova Categoria",
-      "descricao": "Teste de categoria",
-      "cor": "#440808",
-      "id": 6
     }
   ],
   "videos": [
@@ -139,88 +115,46 @@
       "url": "https://www.youtube.com/watch?v=xh3nGdZa1ZI"
     },
     {
-      "id": 16,
+      "titulo": "20th Century Boys",
+      "url": "https://www.youtube.com/watch?v=X59TF7m4lyU",
       "categoriaId": 3,
-      "titulo": "Koe no Katachi",
-      "url": "https://www.youtube.com/watch?v=xh3nGdZa1ZI"
+      "id": 19
     },
     {
-      "id": 17,
+      "titulo": "Oyasumi Punpun",
+      "url": "https://www.youtube.com/watch?v=w8MQ8_FQ6vU",
       "categoriaId": 3,
-      "titulo": "Koe no Katachi",
-      "url": "https://www.youtube.com/watch?v=xh3nGdZa1ZI"
+      "id": 17
     },
     {
-      "id": 18,
+      "titulo": "Vagabond",
+      "url": "https://www.youtube.com/watch?v=KEPmXxPHzJY",
       "categoriaId": 3,
-      "titulo": "Koe no Katachi",
-      "url": "https://www.youtube.com/watch?v=xh3nGdZa1ZI"
-    },
-    {
-      "id": 19,
-      "categoriaId": 3,
-      "titulo": "Koe no Katachi",
-      "url": "https://www.youtube.com/watch?v=xh3nGdZa1ZI"
-    },
-    {
-      "id": 20,
-      "categoriaId": 4,
-      "titulo": "Koe no Katachi",
-      "url": "https://www.youtube.com/watch?v=xh3nGdZa1ZI"
-    },
-    {
-      "id": 21,
-      "categoriaId": 4,
-      "titulo": "Koe no Katachi",
-      "url": "https://www.youtube.com/watch?v=xh3nGdZa1ZI"
-    },
-    {
-      "id": 22,
-      "categoriaId": 4,
-      "titulo": "Koe no Katachi",
-      "url": "https://www.youtube.com/watch?v=xh3nGdZa1ZI"
-    },
-    {
-      "id": 23,
-      "categoriaId": 5,
-      "titulo": "Koe no Katachi",
-      "url": "https://www.youtube.com/watch?v=xh3nGdZa1ZI"
-    },
-    {
-      "id": 24,
-      "categoriaId": 5,
-      "titulo": "Koe no Katachi",
-      "url": "https://www.youtube.com/watch?v=xh3nGdZa1ZI"
-    },
-    {
-      "titulo": "TesteDev",
-      "url": "https://www.youtube.com/watch?v=2O4-6o_x-8o",
-      "categoriaId": 5,
-      "id": 25
-    },
-    {
-      "titulo": "TesteAnime",
-      "url": "https://www.youtube.com/watch?v=2O4-6o_x-8o",
-      "categoriaId": 3,
-      "id": 26
+      "id": 16
     },
     {
       "titulo": "Berserk",
-      "url": "https://www.youtube.com/watch?v=T_W4Vp7lwiQ",
+      "url": "https://www.youtube.com/watch?v=jqlbLB7Owl0",
       "categoriaId": 3,
-      "id": 27
+      "id": 18
     },
     {
-      "titulo": "dsdsa",
-      "url": "https://www.youtube.com/watch?v=mLrYwHIYMBE",
-      "categoriaId": 4,
-      "id": 28
+      "titulo": "Holyland",
+      "url": "https://www.youtube.com/watch?v=W_DA-OqaAlg",
+      "categoriaId": 3,
+      "id": 20    
     },
     {
-      "titulo": "Teste nova categoria",
-      "url": "https://www.youtube.com/watch?v=pzCB9DCGqXM",
-      "categoriaId": 6,
-      "id": 29
+      "titulo": "Red Storm - Manhwa",
+      "url": "https://www.youtube.com/watch?v=tkHg5G_9z08",
+      "categoriaId": 3,
+      "id": 21
+    },
+    {
+      "titulo": "GTO - Great Theacher Onizuka",
+      "url": "https://www.youtube.com/watch?v=gPUdsv_5daY",
+      "categoriaId": 3,
+      "id": 22
     }
   ]
 }

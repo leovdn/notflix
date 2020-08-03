@@ -13,6 +13,10 @@ const Main = styled.main`
   ${({ paddingAll }) => css`
     padding: ${paddingAll};
   `}
+  & h1 {
+    margin: 48px auto;
+    text-align: center;
+  }
 `;
 
 function PageDefault({ children, paddingAll }) {
