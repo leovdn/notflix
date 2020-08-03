@@ -70,14 +70,14 @@ function CadastroVideo() {
         />
 
         <div className="buttonsDiv">
+          <Link to="/cadastro/categoria">
+            <Button>Cadastro de Categorias</Button>
+          </Link>
           <Button 
             className="Cadastrar"
             type="submit">
             Cadastrar
           </Button>
-          <Link to="/cadastro/categoria">
-            <Button>Cadastro de Categorias</Button>
-          </Link>
         </div>
       </form>
 
