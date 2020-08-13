@@ -1,4 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <img align="center" src="./public/notflix-logo.png"  />
+</p>
 
 ## Available Scripts
 
