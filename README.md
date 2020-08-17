@@ -2,6 +2,10 @@
   <img align="center" src="./public/notflix-logo.png"  />
 </p>
 
+## 
+<img align="center" src="./public/notflix-home.png"  />
+
+
 ## Available Scripts
 
 In the project directory, you can run:
